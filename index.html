@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Notifications page</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column justify-content-between align-items-center">
+
+<main class="rounded">
+
+    <!--header-->
+    <section class="notification-header d-flex justify-content-between align-items-center">
+      <h1 class="d-flex align-items-center fw-bold"> Notifications<span class="fw-light text-white rounded" id="notification-number">3</span></h1>
+      <a href="#"> Mark all as read </a>
+    </section>
+
+    <!-- content -->
+    <section class="notification-content d-flex flex-column">
+
+      <div class="d-flex align-items-start gap-3 lh-1 rounded unread">
+        <img src="./assets/images/avatar-mark-webber.webp" alt="User Image" height="40">
+        <div>
+          <h2 class="fw-bold d-inline">Mark Webber</h2>
+          <p class="d-inline opacity-75">reacted to your recent post<span class="fw-bold">My first tournament today!</span></p>
+          <small class="d-block opacity-50">1m ago</small>
+        </div>
+      </div>
+            
+      <div class="d-flex align-items-start gap-3 lh-1 rounded unread">
+        <img src="./assets/images/avatar-angela-gray.webp" alt="User Image" height="40">
+          <div>
+          <h2 class="fw-bold d-inline">Angela Gray</h2>
+          <p class="d-inline opacity-75">followed you</p>
+          <small class="d-block opacity-50">5m ago</small>
+          </div>
+      </div>
+      
+      <div class="d-flex align-items-start gap-3 lh-1 rounded unread">
+        <img src="./assets/images/avatar-jacob-thompson.webp" alt="User Image" height="40">
+          <div>
+          <h2 class="fw-bold d-inline">Jacob Thompson</h2>
+          <p class="d-inline opacity-75">has joined your group<span class="fw-bold chess">Chess Club</span></p>
+          <small class="d-block opacity-50">1day ago</small>
+          </div>
+      </div>
+
+      
+      <div class="d-flex align-items-start gap-3 rounded lh-1">
+        <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="User Image" height="40">
+          <div>
+          <h2 class="fw-bold d-inline">Rizky Hasanuddin</h2>
+          <p class="d-inline opacity-75">sent you a private message</p>
+          <small class="d-block opacity-50">5days ago</small>
+          <div class="border message mt-3 p-3 opacity-75 rounded">
+            <p class="lh-sm">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+          </div>
+          </div>
+      </div>
+       
+      <div class="d-flex align-items-start gap-3 rounded lh-1">
+        <img src="./assets/images/avatar-kimberly-smith.webp" alt="User Image" height="40">
+          <div>
+          <h2 class="fw-bold d-inline">Kimberly Smith</h2>
+          <p class="d-inline opacity-75">commented on your picture</p>
+          <small class="d-block opacity-50">1 week ago</small>
+          </div>
+          <img id="img-chess" src="./assets/images/image-chess.webp" alt="user post" height="40">
+      </div>
+
+      <div class="d-flex align-items-start gap-3 rounded lh-1">
+        <img src="./assets/images/avatar-nathan-peterson.webp" alt="User Image" height="40">
+          <div>
+          <h2 class="fw-bold d-inline">Nathan Petersonr</h2>
+          <p class="d-inline opacity-75">reacted to your recent post<span class="fw-bold">5 end-game strategies to increase your win rate</span></p>
+          <small class="d-block opacity-50">2 weeks ago</small>
+          </div>
+      </div>
+       
+      <div class="d-flex align-items-start gap-3 rounded lh-1">
+        <img src="./assets/images/avatar-anna-kim.webp" alt="User Image" height="40">
+          <div>
+          <h2 class="fw-bold d-inline">Anna Kim</h2>
+          <p class="d-inline opacity-75">left the group<span class="fw-bold chess"> Chess Club</span></p>
+          <small class="d-block opacity-50">2 weeks ago</small>
+          </div>
+      </div>
+
+    </section>
+
+</main>
+  
+  <script src="main.js" ></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+:root{
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --VeryLightGrayishBlue: hsl(210, 60%, 98%);
+    --LightGrayishBlue1: hsl(211, 68%, 94%);
+    --LightGrayishBlue2: hsl(205, 33%, 90%);
+    --GrayishBlue: hsl(219, 14%, 63%);
+    --DarkGrayishBlue: hsl(219, 12%, 42%);
+    --VeryDarkBlue: hsl(224, 21%, 14%);
+}
+
+
+body{
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--LightGrayishBlue1);
+
+}
+
+h1, h2, p, a, span{
+    margin: 0;
+}
+
+.notification-header, .notification-content{
+    padding-inline: 1.5rem;
+}
+
+.notification-header a{
+    text-decoration: none;
+    color: var(--DarkGrayishBlue);
+}
+
+a:hover{
+    color: var(--Blue)
+}
+
+main{
+    max-width: 650px;
+    margin-block: 4rem;
+    background-color: var(--White);
+    padding: 1rem;
+}
+
+h1 span{
+    background-color: var(--Blue);
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    padding: .2rem .5rem;
+}
+
+
+.notification-content{
+    padding: 0 1rem 2rem;
+    gap: .7rem;
+}
+
+
+.notification-content > *{
+    padding: 1rem;
+}
+
+
+.notification-content div p{
+    font-size: .8rem;
+    margin-inline: .2rem;
+}
+
+.notification-content div span{
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding-left: .3rem;
+
+}
+
+.chess{
+    color: var(--Blue);
+}
+
+small{
+    margin-block: 0.3rem;
+}
+
+#img-chess{
+    margin-left:auto;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 0.8rem;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.message:hover{
+    cursor: pointer;
+    background-color: var(--LightGrayishBlue1);
+
+}
+
+.unread {
+    background-color: var(--VeryLightGrayishBlue);
+    position: relative;
+}
+
+.unread p::after {
+    position: absolute;
+    content: "";
+    background-color: var(--Red);
+    width: 7px;
+    height: 7px;
+    border-radius: 50px;
+    transform: translate(75%, 75%);
+}
+
+@media screen and (max-width:700px){
+    
+    body{
+        background-color: var(--White);
+    }
+    
+    main{
+        margin: 0;
+    }
+
+    a{
+        font-size: .8rem;
+        padding-inline: .5rem;
+    }
+}
